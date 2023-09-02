@@ -6,11 +6,191 @@
     <title>Documentation - myFlix</title>
 </head>
 <body>
-    <div>
-        <h1>Objective</h1>
+    <div class="container">
+        <h1>myFlix App</h1>
+        <h2>Objective</h2>
         <p>
             To build the server-side component of a “movies” web application. The web application will provide users with access to information about different movies, directors, and genres. Users will be able to sign up, update their personal information, and create a list of their favorite movies.
         </p>
     </div>
+    <br>
+    <br>
+
+    <div class="container">
+        <h2>URL Endpoints</h2>
+        <table class="endpoints-table">
+            <thead class="endpoints-table__header">
+                <tr class="endpoints-table__row">
+                    <th>Request</th>
+                    <th>URL</th>
+                    <th>HTTP Method</th>
+                    <th>Request Data Format</th>
+                    <th>Response Data Body Format</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+
+            <tbody class="table-body">
+                <tr class="table-row">
+                    <td>Get a list of all movies</td>
+                    <td>/movies</td>
+                    <td>GET</td>
+                    <td>None</td>
+                    <td>A JSON object holding data about all the movies</td>
+                    <td></td>
+                </tr>
+
+                <tr class="table-row">
+                    <td>Get a single movie by movie title</td>
+                    <td>/movies/:movie-title</td>
+                    <td>GET</td>
+                    <td>None</td>
+                    <td>A JSON object holding all the data about a single movie</td>
+                    <td>
+                        <code>
+                            {
+                                "Title": "Harry Potter and the Sorcerer's Stone",
+                                "Description": "Adaptation of the first of...",
+                                "Genre": {
+                                    "Name": "Fantasy",
+                                    "Description": "Speculative fiction involving..."
+                                },
+                                "Director": {
+                                    "Name": "Chris Columbus",
+                                    "Born": 1958
+                                    "Bio": "Chris Joseph Columbus is an...",
+                                },
+                                "ImgURL": "https://upload.wikimedia.org/wikipedia/en/7/7a/Harry_Potter_and_the_Philosopher%27s_Stone_banner.jpg",
+                                "Featured": true
+                            };
+                        </code>
+                    </td>
+                </tr>
+
+                <tr class="table-row">
+                    <td>Get data about a genre by name</td>
+                    <td>/movies/genres/:genre-name</td>
+                    <td>GET</td>
+                    <td>None</td>
+                    <td>A JSON object holding data about a single genre</td>
+                    <td>
+                        <code>
+                            "Genre": {
+                                "Name": "Fantasy",
+                                "Description": "Speculative fiction involving..."
+                            };
+                        </code>
+                    </td>
+                </tr>
+
+                <tr class="table-row">
+                    <td>Get data about a director by name</td>
+                    <td>/movies/:director-name</td>
+                    <td>GET</td>
+                    <td>None</td>
+                    <td>A JSON object holding data about a director</td>
+                    <td>
+                        <code>
+                            {
+                                "Name": "Chris Columbus",
+                                "Born": 1958,
+                                "Bio": "Chris Joseph Columbus is an..."
+                            };
+                        </code>
+                    </td>
+                </tr>
+
+                <tr class="table-row">
+                    <td>Allows a user to register an account</td>
+                    <td>/user/register</td>
+                    <td>POST</td>
+                    <td>A JSON object holding user data</td>
+                    <td>A JSON object holding user data and a newly generated ID</td>
+                    <td>
+                        <code>
+                            {
+                                "Username": "movie_lover66",
+                                "Password": "ilovemovies66",
+                                "Email": "movie_lover66@fakeema.il"
+                                "ID": "f5c53c9a-d0dc-4939-add1-6705c7d01cec"
+                            };
+                        </code>
+                    </td>
+                </tr>
+
+                <tr class="table-row">
+                    <td>Allows existing users to update their info</td>
+                    <td>/user/:username/update-info</td>
+                    <td>PUT</td>
+                    <td>A JSON object holding user data indicated to be changed</td>
+                    <td>A JSON object holding updated user data</td>
+                    <td>
+                        <code>
+                            {
+                                "Username": "new_username",
+                                "Password": "ilovemovies66",
+                                "Email": "movie_lover66@fakeema.il"
+                            };
+                        </code>
+                    </td>
+                </tr>
+
+                <tr class="table-row">
+                    <td>Allows users to add a movie to their favorites list</td>
+                    <td>/user/:username/favorites-list</td>
+                    <td>PUT</td>
+                    <td>A JSON object holding an empty array</td>
+                    <td>A JSON object holding an array with an added movie item</td>
+                    <td>
+                        <code>
+                            {
+                                "Favorites-List": [
+                                    {
+                                        "Name": "Harry Potter and the Sorcerer's Stone",
+                                        "ID": "9937ee5c-3c6d-4296-9be3-f46c685697b5"
+                                    },
+                                    {
+                                        "Name": "The Lord of the Rings: The Two Towers",
+                                        "ID": "19ad65ed-a56b-4671-8653-49e73a9e9ba9"
+                                    }
+                                ]
+                            };
+                        </code>
+                    </td>
+                </tr>
+
+                <tr class="table-row">
+                    <td>Allows users to remove a movie from their favorites list</td>
+                    <td>/user/:username/favorites-list</td>
+                    <td>DELETE</td>
+                    <td>None</td>
+                    <td>A JSON object holding the updated array</td>
+                    <td>
+                        <code>
+                            {
+                                "Favorites-List": [
+                                    {
+                                        "Name": "Harry Potter and the Sorcerer's Stone",
+                                        "ID": "9937ee5c-3c6d-4296-9be3-f46c685697b5"
+                                    }
+                                ]
+                            };
+                        </code>
+                    </td>
+                </tr>
+                
+                <tr class="table-row">
+                    <td>Allows users to deregister their account</td>
+                    <td>/user/:username/update-info</td>
+                    <td>DELETE</td>
+                    <td>None</td>
+                    <td>A text message notifying if the user was successfully deregistered</td>
+                    <td></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
 </body>
 </html>
