@@ -119,6 +119,58 @@ app.get("/top-ten-list", (req, res) => {
     res.json(topMovies);
 });
 
+// Route to list of all movies
+app.get("/movies", (req, res) => {
+    res.send("Successful GET request returning data on all movies.");
+});
+
+// Route to description of a single movie by title
+app.get("/movies/:movie-title", (req, res) => {
+    res.send("Successful GET request returning data on :movie-title.");
+});
+
+// Route to description of a genre by name
+app.get("/movies/genres/:genre-name", (req, res) => {
+    res.send("Successful GET request returning data on :genre-name.");
+});
+
+// Route to data about a director by name
+app.get("/movies/:director-name", (req, res) => {
+    res.send("Successful GET request returning data on :director-name.");
+});
+
+
+//---------------------------POST requests---------------------------//
+// Allows new users to register
+app.post("/user/register", (req, res) => {
+    res.send("Successful POST request creating new user.");
+});
+
+
+//----------------------------PUT requests---------------------------//
+// Allows existing users to update their info
+app.put("/user/:username/update-info", (req, res) => {
+    res.send("Successful PUT request updating user info.");
+});
+
+// Allows users to add movies to their favorites list
+app.put("/user/:username/favorites-list", (req, res) => {
+    res.send("Successful PUT request updating user favorites.");
+});
+
+
+//----------------------------DELETE requests-------------------------//
+// Allows user to remove movies from their favorites list
+app.delete("/user/:username/favorites-list", (req, res) => {
+    res.send("Successful DELETE request removing movie from user favorites.");
+});
+
+// Allows existing users to deregister their account
+app.delete("/user/:username/update-info", (req, res) => {
+    res.send("Successful DELETE request removing user email.");
+});
+
+
 
 // Error handler
 app.use((err, req, res, next) => {
