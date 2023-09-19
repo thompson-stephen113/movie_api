@@ -42,7 +42,7 @@
 
                 <tr class="table-row">
                     <td>Get a single movie by movie title</td>
-                    <td>/movies/:movie-title</td>
+                    <td>/movies/:Title</td>
                     <td>GET</td>
                     <td>None</td>
                     <td>A JSON object holding all the data about a single movie</td>
@@ -69,7 +69,7 @@
 
                 <tr class="table-row">
                     <td>Get data about a genre by name</td>
-                    <td>/movies/genres/:genre-name</td>
+                    <td>/movies/genres/:Genre</td>
                     <td>GET</td>
                     <td>None</td>
                     <td>A JSON object holding data about a single genre</td>
@@ -85,7 +85,7 @@
 
                 <tr class="table-row">
                     <td>Get data about a director by name</td>
-                    <td>/movies/:director-name</td>
+                    <td>/movies/:Director</td>
                     <td>GET</td>
                     <td>None</td>
                     <td>A JSON object holding data about a director</td>
@@ -102,7 +102,7 @@
 
                 <tr class="table-row">
                     <td>Allows a user to register an account</td>
-                    <td>/user/register</td>
+                    <td>/users/register</td>
                     <td>POST</td>
                     <td>A JSON object holding user data</td>
                     <td>A JSON object holding user data and a newly generated ID</td>
@@ -120,7 +120,7 @@
 
                 <tr class="table-row">
                     <td>Allows existing users to update their info</td>
-                    <td>/user/:username/update-info</td>
+                    <td>/users/:Username/update-info</td>
                     <td>PUT</td>
                     <td>A JSON object holding user data indicated to be changed</td>
                     <td>A JSON object holding updated user data</td>
@@ -137,7 +137,7 @@
 
                 <tr class="table-row">
                     <td>Allows users to add a movie to their favorites list</td>
-                    <td>/user/:username/favorites-list</td>
+                    <td>/users/:Username/favorites-list</td>
                     <td>PUT</td>
                     <td>A JSON object holding an empty array</td>
                     <td>A JSON object holding an array with an added movie item</td>
@@ -161,7 +161,7 @@
 
                 <tr class="table-row">
                     <td>Allows users to remove a movie from their favorites list</td>
-                    <td>/user/:username/favorites-list</td>
+                    <td>/users/:Username/favorites-list</td>
                     <td>DELETE</td>
                     <td>None</td>
                     <td>A JSON object holding the updated array</td>
@@ -181,7 +181,7 @@
                 
                 <tr class="table-row">
                     <td>Allows users to deregister their account</td>
-                    <td>/user/:username/update-info</td>
+                    <td>/users/:Username/update-info</td>
                     <td>DELETE</td>
                     <td>None</td>
                     <td>A text message notifying if the user was successfully deregistered</td>
