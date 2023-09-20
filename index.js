@@ -10,6 +10,7 @@ const app = express();
 
 const mongoose = require("mongoose");
 const Models = require("./models.js");
+const bodyParser = require("body-parser");
 
 const Movies = Models.Movie;
 const Users = Models.User;
@@ -118,6 +119,9 @@ app.use(morgan("common"));
 
 // Serving static files from "public" folder
 app.use(express.static("public"));
+
+// Middleware to parse JSON requests
+app.use(bodyParser.json());
 
 
 //---------------------------GET requests---------------------------//
