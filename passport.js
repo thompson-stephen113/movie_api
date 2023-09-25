@@ -1,3 +1,4 @@
+// Required modules
 const { Model } = require("mongoose");
 
 const passport = require("passport"),
@@ -5,10 +6,14 @@ const passport = require("passport"),
     Models = require("./models.js"),
     passportJWT = require("passport-jwt");
 
+
+// Models integration
 let Users = Models.User,
     JWTStrategy = passportJWT.Strategy,
     ExtractJWT = passportJWT.ExtractJwt;
 
+
+//--------------------------Local Strategy--------------------------//
 passport.use(new LocalStrategy(
     {
         usernameField: "Username",
@@ -24,6 +29,10 @@ passport.use(new LocalStrategy(
                     message: "Incorrect username or password.",
                 });
             }
+            if (!user.validatePassword(password)) {
+                console.log("incorrect password");
+                return callback(null, false, { message: "Incorrect password." });
+            }
             console.log("finished");
             return callback(null, user);
         })
@@ -37,6 +46,7 @@ passport.use(new LocalStrategy(
 ));
 
 
+//---------------------------JWT Strategy---------------------------//
 passport.use(new JWTStrategy(
     {
         jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken(),
