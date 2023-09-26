@@ -46,12 +46,3 @@ module.exports = (router) => {
         res.json({ token: newToken });
     });
 }
-
-// Function to generate a new JWT
-function generateJWTToken(user) {
-    return jwt.sign(user.toJSON(), jwtSecret, {
-        subject: user.Username,
-        expiresIn: "7d",
-        algorithm: "HS256"
-    });
-}
