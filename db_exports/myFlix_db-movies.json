@@ -1,0 +1,191 @@
+[{
+    "_id": {
+        "$oid": "65046deb498b41ec74f0076e"
+    },
+    "Title": "Oppenheimer",
+    "Description": "During World War II, Lt. Gen. Leslie Groves Jr. appoints physicist J. Robert Oppenheimer to work on the top-secret Manhattan Project. Oppenheimer and a team of scientists spend years developing and designing the atomic bomb. Their work comes to fruition on July 16, 1945, as they witness the world's first nuclear explosion, forever changing the course of history.",
+    "Genre": {
+        "Name": "Biographical",
+        "Description": "A biographical film or biopic is a film that dramatizes the life of a non-fictional or historically-based person or people. Such films show the life of a historical person and the central character's real name is used. (Wikipedia)"
+    },
+    "Director": {
+        "Name": "Christopher Nolan",
+        "Bio": "Christopher Edward Nolan CBE is a British and American filmmaker. Known for his Hollywood blockbusters with complex storytelling, Nolan is considered a leading filmmaker of the 21st century. His films have grossed $5 billion worldwide. (Wikipedia)",
+        "Birth": "1970-07-30",
+        "Death": null
+    },
+    "ImagePath": "https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg",
+    "Featured": true
+},
+{
+    "_id": {
+        "$oid": "65046f17498b41ec74f0076f"
+    },
+    "Title": "The Dark Knight",
+    "Description": "With the help of allies Lt. Jim Gordon (Gary Oldman) and DA Harvey Dent (Aaron Eckhart), Batman (Christian Bale) has been able to keep a tight lid on crime in Gotham City. But when a vile young criminal calling himself the Joker (Heath Ledger) suddenly throws the town into chaos, the caped Crusader begins to tread a fine line between heroism and vigilantism.",
+    "Genre": {
+        "Name": "Action",
+        "Description": "Action film is a film genre in which the protagonist is thrust into a series of events that typically involve violence and physical feats. (Wikipedia)"
+    },
+    "Director": {
+        "Name": "Christopher Nolan",
+        "Bio": "Christopher Edward Nolan CBE is a British and American filmmaker. Known for his Hollywood blockbusters with complex storytelling, Nolan is considered a leading filmmaker of the 21st century. His films have grossed $5 billion worldwide. (Wikipedia)",
+        "Birth": "1970-07-30",
+        "Death": null
+    },
+    "ImagePath": "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg",
+    "Featured": false
+},
+{
+    "_id": {
+        "$oid": "650470eef089e4deba99c437"
+    },
+    "Title": "Young Frankenstein",
+    "Description": "Respected medical lecturer Dr. Frederick Frankenstein (Gene Wilder) learns that he has inherited his infamous grandfather's estate in Transylvania. Arriving at the castle, Dr. Frankenstein soon begins to recreate his grandfather's experiments with the help of servants Igor (Marty Feldman), Inga (Teri Garr) and the fearsome Frau Blücher (Cloris Leachman). After he creates his own monster (Peter Boyle), new complications ensue with the arrival of the doctor's fiancée, Elizabeth (Madeline Kahn).",
+    "Genre": {
+        "Name": "Comedy",
+        "Description": "A comedy film is a category of film which emphasizes on humor. These films are designed to make the audience laugh in amusement. Films in this style traditionally have a happy ending. Comedy is one of the oldest genres in the film and it is derived from classical comedy in theatre. (Wikipedia)"
+    },
+    "Director": {
+        "Name": "Mel Brooks",
+        "Bio": "Melvin James Brooks is an American actor, comedian and filmmaker. With a career spanning over seven decades, he is known as a writer and director of a variety of successful broad farces and parodies. (Wikipedia)",
+        "Birth": "1926-06-28",
+        "Death": null
+    },
+    "ImagePath": "https://upload.wikimedia.org/wikipedia/en/b/b5/Young_Frankenstein_movie_poster.jpg",
+    "Featured": false
+},
+{
+    "_id": {
+        "$oid": "650471aaf089e4deba99c438"
+    },
+    "Title": "Robin Hood: Men in Tights",
+    "Description": "Crusading nobleman Robin of Loxley (Cary Elwes) escapes from prison in Jerusalem and returns home to find that the evil Prince John (Richard Lewis) has confiscated his family estate and is abusing the citizenry. Robin enlists his blind attendant, Blinkin (Mark Blankfield), his friend Will Scarlett O'Hara (Matthew Porretta) and Little John (Eric Allan Kramer) to help regain his home. Robin also hopes to woo the beautiful Maid Marian (Amy Yasbeck), but her chastity belt may prove a challenge.",
+    "Genre": {
+        "Name": "Comedy",
+        "Description": "A comedy film is a category of film which emphasizes on humor. These films are designed to make the audience laugh in amusement. Films in this style traditionally have a happy ending. Comedy is one of the oldest genres in the film and it is derived from classical comedy in theatre. (Wikipedia)"
+    },
+    "Director": {
+        "Name": "Mel Brooks",
+        "Bio": "Melvin James Brooks is an American actor, comedian and filmmaker. With a career spanning over seven decades, he is known as a writer and director of a variety of successful broad farces and parodies. (Wikipedia)",
+        "Birth": "1926-06-28",
+        "Death": null
+    },
+    "ImagePath": "https://upload.wikimedia.org/wikipedia/en/1/12/RobinHoodMeninTights_Poster.jpg",
+    "Featured": false
+},
+{
+    "_id": {
+        "$oid": "65047290f089e4deba99c439"
+    },
+    "Title": "Sleepy Hollow",
+    "Description": "Set in 1799, \"Sleepy Hollow\" is based on Washington Irving's classic tale \"The Legend of Sleepy Hollow.\" Faithful to the dreamy custom-bound world that Irving paints in his story, the film mixes horror, fantasy and romance and features an extraordinary cast of characters that dabble in the supernatural.",
+    "Genre": {
+        "Name": "Horror",
+        "Description": "Horror is a film genre that seeks to elicit fear or disgust in its audience for entertainment purposes. Horror films often explore dark subject matter and may deal with transgressive topics or themes. Broad elements include monsters, apocalyptic events, and religious or folk beliefs. (Wikipedia)"
+    },
+    "Director": {
+        "Name": "Tim Burton",
+        "Bio": "Tim Burton is a director, producer and screenwriter. After majoring in animation at the California Institute of Arts, he got his start in the business by working as a Disney animator. He quickly struck out on his own and became known for creating visually striking films that blend themes of fantasy and horror. (biography.com)",
+        "Birth": "1958-08-25",
+        "Death": null
+    },
+    "ImagePath": "https://upload.wikimedia.org/wikipedia/en/0/09/Sleepy_hollow_ver2.jpg",
+    "Featured": false
+},
+{
+    "_id": {
+        "$oid": "6504737af089e4deba99c43b"
+    },
+    "Title": "Sweeney Todd: The Demon Barber of Fleet Street",
+    "Description": "Evil Judge Turpin (Alan Rickman) lusts for the beautiful wife of a London barber (Johnny Depp) and transports him to Australia for a crime he did not commit. Returning after 15 years and calling himself Sweeney Todd, the now-mad man vows revenge, applying his razor to unlucky customers and shuttling the bodies down to Mrs. Lovett (Helena Bonham Carter), who uses them in her meat-pie shop. Though many fall to his blade, he will not be satisfied until he slits Turpin's throat.",
+    "Genre": {
+        "Name": "Musical",
+        "Description": "Musical film is a film genre in which songs by the characters are interwoven into the narrative, sometimes accompanied by dancing. The songs usually advance the plot or develop the film's characters, but in some cases, they serve merely as breaks in the storyline, often as elaborate \"production numbers\". (Wikipedia)"
+    },
+    "Director": {
+        "Name": "Tim Burton",
+        "Bio": "Tim Burton is a director, producer and screenwriter. After majoring in animation at the California Institute of Arts, he got his start in the business by working as a Disney animator. He quickly struck out on his own and became known for creating visually striking films that blend themes of fantasy and horror. (biography.com)",
+        "Birth": "1958-08-25",
+        "Death": null
+    },
+    "ImagePath": "https://upload.wikimedia.org/wikipedia/en/4/4b/Sweeneylarge.jpg",
+    "Featured": false
+},
+{
+    "_id": {
+        "$oid": "650474c6f089e4deba99c43c"
+    },
+    "Title": "Beetlejuice",
+    "Description": "After Barbara (Geena Davis) and Adam Maitland (Alec Baldwin) die in a car accident, they find themselves stuck haunting their country residence, unable to leave the house. When the unbearable Deetzes (Catherine O'Hara, Jeffrey Jones) and teen daughter Lydia (Winona Ryder) buy the home, the Maitlands attempt to scare them away without success. Their efforts attract Beetlejuice (Michael Keaton), a rambunctious spirit whose \"help\" quickly becomes dangerous for the Maitlands and innocent Lydia.",
+    "Genre": {
+        "Name": "Comedy",
+        "Description": "A comedy film is a category of film which emphasizes on humor. These films are designed to make the audience laugh in amusement. Films in this style traditionally have a happy ending. Comedy is one of the oldest genres in the film and it is derived from classical comedy in theatre. (Wikipedia)"
+    },
+    "Director": {
+        "Name": "Tim Burton",
+        "Bio": "Tim Burton is a director, producer and screenwriter. After majoring in animation at the California Institute of Arts, he got his start in the business by working as a Disney animator. He quickly struck out on his own and became known for creating visually striking films that blend themes of fantasy and horror. (biography.com)",
+        "Birth": "1958-08-25",
+        "Death": null
+    },
+    "ImagePath": "https://upload.wikimedia.org/wikipedia/en/7/76/Beetlejuice_%281988_film_poster%29.png",
+    "Featured": false
+},
+{
+    "_id": {
+        "$oid": "650475e3f089e4deba99c43d"
+    },
+    "Title": "The Lord of the Rings: The Fellowship of the Ring",
+    "Description": "The future of civilization rests in the fate of the One Ring, which has been lost for centuries. Powerful forces are unrelenting in their search for it. But fate has placed it in the hands of a young Hobbit named Frodo Baggins (Elijah Wood), who inherits the Ring and steps into legend. A daunting task lies ahead for Frodo when he becomes the Ringbearer - to destroy the One Ring in the fires of Mount Doom where it was forged.",
+    "Genre": {
+        "Name": "Fantasy",
+        "Description": "Fantasy films are films that belong to the fantasy genre with fantastic themes, usually magic, supernatural events, mythology, folklore, or exotic fantasy worlds. The genre is considered a form of speculative fiction alongside science fiction films and horror films, although the genres do overlap. (Wikipedia)"
+    },
+    "Director": {
+        "Name": "Peter Jackson",
+        "Bio": "Sir Peter Robert Jackson ONZ KNZM is a New Zealand film director, screenwriter and producer. He is best known as the director, writer and producer of the Lord of the Rings trilogy and the Hobbit trilogy, both of which are adapted from the novels of the same name by J. R. R. Tolkien. (Wikipedia)",
+        "Birth": "1961-10-31",
+        "Death": null
+    },
+    "ImagePath": "https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings%2C_TFOTR_%282001%29.jpg",
+    "Featured": false
+},
+{
+    "_id": {
+        "$oid": "6504769bf089e4deba99c43e"
+    },
+    "Title": "Star Wars: Episode III - Revenge of the Sith",
+    "Description": "It has been three years since the Clone Wars began. Jedi Master Obi-Wan Kenobi (Ewan McGregor) and Jedi Knight Anakin Skywalker (Hayden Christensen) rescue Chancellor Palpatine (Ian McDiarmid) from General Grievous, the commander of the droid armies, but Grievous escapes. Suspicions are raised within the Jedi Council concerning Chancellor Palpatine, with whom Anakin has formed a bond. Asked to spy on the chancellor, and full of bitterness toward the Jedi Council, Anakin embraces the Dark Side.",
+    "Genre": {
+        "Name": "Science fiction",
+        "Description": "Science fiction is a film genre that uses speculative, fictional science-based depictions of phenomena that are not fully accepted by mainstream science, such as extraterrestrial lifeforms, spacecraft, robots, cyborgs, dinosaurs, mutants, interstellar travel, time travel, or other technologies. (Wikipedia)"
+    },
+    "Director": {
+        "Name": "George Lucas",
+        "Bio": "George Walton Lucas Jr. is an American filmmaker. Lucas is best known for creating the Star Wars and Indiana Jones franchises and founding Lucasfilm, LucasArts, Industrial Light & Magic, and THX. He served as chairman of Lucasfilm before selling it to The Walt Disney Company in 2012. (Wikipedia)",
+        "Birth": "1944-05-14",
+        "Death": null
+    },
+    "ImagePath": "https://upload.wikimedia.org/wikipedia/en/9/93/Star_Wars_Episode_III_Revenge_of_the_Sith_poster.jpg",
+    "Featured": false
+},
+{
+    "_id": {
+        "$oid": "65047734f089e4deba99c43f"
+    },
+    "Title": "Indiana Jones and the Last Crusade",
+    "Description": "An art collector appeals to Indiana Jones to embark on a search for the Holy Grail. He learns that another archaeologist has disappeared while searching for the precious goblet, and the missing man is his own father, Dr. Henry Jones. The artifact is much harder to find than they expected, and its powers are too much for those impure of heart. (IMDb)",
+    "Genre": {
+        "Name": "Adventure",
+        "Description": "An adventure film is a form of adventure fiction, and is a genre of film. Subgenres of adventure films include swashbuckler films, pirate films, and survival films. (Wikipedia)"
+    },
+    "Director": {
+        "Name": "Steven Spielberg",
+        "Bio": "Steven Allan Spielberg is an American film director, producer and screenwriter. A major figure of the New Hollywood era and pioneer of the modern blockbuster, he is the most commercially successful director in history. (Wikipedia)",
+        "Birth": "1946-12-18",
+        "Death": null
+    },
+    "ImagePath": "https://upload.wikimedia.org/wikipedia/en/8/8c/Indiana_Jones_and_the_Last_Crusade.png",
+    "Featured": false
+}
+]

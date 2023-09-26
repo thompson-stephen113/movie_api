@@ -1,0 +1,74 @@
+[{
+    "_id": {
+        "$oid": "650478726c48fa8d75e64ece"
+    },
+    "Username": "xXxmovielover66xXx",
+    "Password": "ilovemovies66",
+    "Email": "captainmayhem@fakeema.il",
+    "Birthday": {
+        "$date": "1992-02-29T00:00:00Z"
+    },
+    "FavoriteMovies": [{
+        "$oid": "650470eef089e4deba99c437"
+    }]
+},
+{
+    "_id": {
+        "$oid": "65047a5fc94ea2cf9bdde19a"
+    },
+    "Username": "galileo3901",
+    "Password": "FaintHeart1986",
+    "Email": "jessica_banks1@fakeema.il",
+    "Birthday": {
+        "$date": "1986-03-04T00:00:00Z"
+    },
+    "FavoriteMovies": [{
+        "$oid": "650471aaf089e4deba99c438"
+    }]
+},
+{
+    "_id": {
+        "$oid": "65047b1bc94ea2cf9bdde19b"
+    },
+    "Username": "max1234",
+    "Password": "max1000000",
+    "Email": "maximillion@fakeema.il",
+    "Birthday": {
+        "$date": {
+            "$numberLong": "-305164800000"
+        }
+    },
+    "FavoriteMovies": [{
+        "$oid": "65047290f089e4deba99c439"
+    }]
+},
+{
+    "_id": {
+        "$oid": "65090d4e5e2488a0188f52ac"
+    },
+    "Username": "jamie_taylor3",
+    "Password": "f3!rFR097E#&eqCK8x",
+    "Email": "james_taylor3@fakeema.il",
+    "Birthday": {
+        "$date": "1973-11-21T00:00:00Z"
+    },
+    "FavoriteMovies": [{
+        "$oid": "6504737af089e4deba99c43b"
+    }]
+},
+{
+    "_id": {
+        "$oid": "650b39f7839bd20d0daddf9b"
+    },
+    "Username": "corporalkiljoy",
+    "Password": "!MasterChief117",
+    "Email": "johnson.john119@fakeema.il",
+    "Birthday": {
+        "$date": "1990-12-31T00:00:00Z"
+    },
+    "FavoriteMovies": [{
+        "$oid": "6504737af089e4deba99c43b"
+    }],
+    "__v": 0
+}
+]
