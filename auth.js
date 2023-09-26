@@ -37,3 +37,21 @@ module.exports = (router) => {
         })(req, res);
     });
 }
+
+// PUT update JWT upon updating user info
+module.exports = (router) => {
+    router.post("/update-token", (req, res) => {
+        const user = req.user;
+        const newToken = generateJWTToken(user);
+        res.json({ token: newToken });
+    });
+}
+
+// Function to generate a new JWT
+function generateJWTToken(user) {
+    return jwt.sign(user.toJSON(), jwtSecret, {
+        subject: user.Username,
+        expiresIn: "7d",
+        algorithm: "HS256"
+    });
+}
