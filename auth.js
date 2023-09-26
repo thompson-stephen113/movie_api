@@ -37,12 +37,3 @@ module.exports = (router) => {
         })(req, res);
     });
 }
-
-// PUT update JWT upon updating user info
-module.exports = (router) => {
-    router.post("/update-token", (req, res) => {
-        const user = req.user;
-        const newToken = generateJWTToken(user);
-        res.json({ token: newToken });
-    });
-}
