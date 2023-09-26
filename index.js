@@ -15,7 +15,11 @@ const bodyParser = require("body-parser");
 const Movies = Models.Movie;
 const Users = Models.User;
 
-mongoose.connect("mongodb://127.0.0.1:27017/myFlix_db", { useNewUrlParser: true, useUnifiedTopology: true});
+// Local connection
+// mongoose.connect("mongodb://127.0.0.1:27017/myFlix_db", { useNewUrlParser: true, useUnifiedTopology: true});
+
+// Online connection
+mongoose.connect("process.env.CONNECTION_URI", { useNewUrlParser: true, useUnifiedTopology: true});
 
 
 // Data for top 10 movies list
