@@ -134,7 +134,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //------------------------CORS Integration--------------------------//
 const cors = require("cors");
 
-let allowedOrigins = ["http://localhost:8080", "http://localhost:1234", "http://testsite.com"];
+let allowedOrigins = ["http://localhost:8080", "http://localhost:1234", "https://myflix-db-app-24338506cd5a.herokuapp.com/"];
 
 app.use(cors({
     origin: (origin, callback) => {
@@ -170,7 +170,7 @@ app.get("/top-ten-list", passport.authenticate("jwt", { session: false }), (req,
 });
 
 // Route to list of all movies
-app.get("/movies", async (req, res) => {
+app.get("/movies", passport.authenticate("jwt", { session: false }), async (req, res) => {
     await Movies.find()
         .then((movies) => {
             res.status(201).json(movies);
