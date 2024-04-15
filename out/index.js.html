@@ -1,4 +1,32 @@
-// DATABASE NAME IN TERMINAL: myFlix_db
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: index.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: index.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>// DATABASE NAME IN TERMINAL: myFlix_db
 
 
 // Required modules
@@ -75,7 +103,7 @@ app.get("/", (req, res) => {
  * @name getAllMovies
  * @param {Object} req - Express request object.
  * @param {Object} res - Express response object.
- * @returns {Promise<void>} A promise that resolves once the movies are retrieved.
+ * @returns {Promise&lt;void>} A promise that resolves once the movies are retrieved.
  * @throws {Error} Will throw an error if there is an issue retrieving movies from database.
  */
 app.get("/movies", passport.authenticate("jwt", { session: false }), async (req, res) => {
@@ -96,7 +124,7 @@ app.get("/movies", passport.authenticate("jwt", { session: false }), async (req,
  * @param {Object} req - Express request object.
  * @param {string} req.params.Title - The title of the movie to retrieve.
  * @param {Object} res - Express response object.
- * @returns {Promise<void>} A promise that resolves once the movie is retrieved.
+ * @returns {Promise&lt;void>} A promise that resolves once the movie is retrieved.
  * @throws {Error} Will throw an error if there is an issue retrieving the movie from database.
  */
 app.get("/movies/:Title", passport.authenticate("jwt", { session: false }), async (req, res) => {
@@ -117,7 +145,7 @@ app.get("/movies/:Title", passport.authenticate("jwt", { session: false }), asyn
  * @param {Object} req - Express request object.
  * @param {string} req.params.Genre - The category of genre to retrieve.
  * @param {Object} res - Express response object.
- * @returns {Promise<void>} A promise that resolves once the genre is retrieved.
+ * @returns {Promise&lt;void>} A promise that resolves once the genre is retrieved.
  * @throws {Error} Will throw an error if there is an issue retrieving the genre from database.
  */
 app.get("/movies/genres/:Genre", passport.authenticate("jwt", { session: false }), async (req, res) => {
@@ -138,7 +166,7 @@ app.get("/movies/genres/:Genre", passport.authenticate("jwt", { session: false }
  * @param {Object} req - Express request object.
  * @param {string} req.params.Director - The name of the director to retrieve.
  * @param {Object} res - Express response object.
- * @returns {Promise<void>} A promise that resolves once the director is retrieved.
+ * @returns {Promise&lt;void>} A promise that resolves once the director is retrieved.
  * @throws {Error} Will throw an error if there is an issue retrieving the director from database.
  */
 app.get("/movies/directors/:Director", passport.authenticate("jwt", { session: false }), async (req, res) => {
@@ -159,7 +187,7 @@ app.get("/movies/directors/:Director", passport.authenticate("jwt", { session: f
  * @name getAllUsers
  * @param {Object} req - Express request object.
  * @param {Object} res - Express response object.
- * @returns {Promise<void>} A promise that resolves once all users are retrieved.
+ * @returns {Promise&lt;void>} A promise that resolves once all users are retrieved.
  * @throws {Error} Will throw an error if there is an issue retrieving users from database.
  */
 app.get("/users", passport.authenticate("jwt", { session: false }), async (req, res) => {
@@ -180,7 +208,7 @@ app.get("/users", passport.authenticate("jwt", { session: false }), async (req, 
  * @param {Object} req - Express request object.
  * @param {string} req.params.Username - The username to be retrieved.
  * @param {Object} res - Express response object.
- * @returns {Promise<void>} A promise that resolves once the user is retrieved.
+ * @returns {Promise&lt;void>} A promise that resolves once the user is retrieved.
  * @throws {Error} Will throw an error if there is an issue retrieving the user from database.
  */
 app.get("/users/:Username", passport.authenticate("jwt", { session: false }), async (req, res) => {
@@ -203,7 +231,7 @@ app.get("/users/:Username", passport.authenticate("jwt", { session: false }), as
  * @name registerUser
  * @param {Object} req - Express request object.
  * @param {Object} res - Express response object.
- * @returns {Promise<void>} A promise that resolves once the user is registered.
+ * @returns {Promise&lt;void>} A promise that resolves once the user is registered.
  * @throws {Error} Will throw an error if there is an issue registering the user or if validation fails.
  */
 app.post("/users",
@@ -247,14 +275,14 @@ app.post("/users",
 );
 
 /**
- * Allows users to add movies to their Favorites List
+ * Allows users to add movies to their favorites list
  * @function
  * @name addFavorite
  * @param {Object} req - Express request object.
  * @param {string} req.params.Username - The username of the user whose Favorites List is being updated.
  * @param {string} req.params.MovieID - The ID of the movie being added to the Favorites List.
  * @param {Oject} res - Express response object.
- * @returns {Promise<void>} A promise that resolves once the movie is added to the user's Favorites List.
+ * @returns {Promise&lt;void>} A promise that resolves once the movie is added to the user's Favorites List.
  * @throws {Error} Will throw an error if there is an issue updating the user's Favorites List in the database.
  */
 app.post("/users/:Username/favorites-list/:MovieID", passport.authenticate("jwt", { session: false }), async (req, res) => {
@@ -285,7 +313,7 @@ app.post("/users/:Username/favorites-list/:MovieID", passport.authenticate("jwt"
  * @param {string} req.body.Email - The new email.
  * @param {string} req.body.Birthday - The new birthday.
  * @param {Object} res - Express response object.
- * @returns {Promise<void>} A promise that resolves once the user information is updated.
+ * @returns {Promise&lt;void>} A promise that resolves once the user information is updated.
  * @throws {Error} Will throw an error if there is an issue updating the user information in the database or if the user does not have permission to update the information.
  */
 app.put("/users/:Username/update-info", passport.authenticate("jwt", { session: false }), async (req, res) => {
@@ -322,7 +350,7 @@ app.put("/users/:Username/update-info", passport.authenticate("jwt", { session: 
  * @param {string} req.params.Username - The username of the user whose Favorites List is being updated.
  * @param {string} req.params.MovieID - The ID of the movie in the Favorites List to be removed.
  * @param {Object} res - Express response object.
- * @returns {Promise<void>} A promise that resolves once the movie is removed and the Favorites List is updated.
+ * @returns {Promise&lt;void>} A promise that resolves once the movie is removed and the Favorites List is updated.
  * @throws {Error} Will throw an error if there is an issue removing the movie from the user's Favorites List.
  */
 app.delete("/users/:Username/favorites-list/:MovieID", passport.authenticate("jwt", { session: false }), async (req, res) => {
@@ -346,7 +374,7 @@ app.delete("/users/:Username/favorites-list/:MovieID", passport.authenticate("jw
  * @param {Object} req - Express request object.
  * @param {string} req.params.Username - The username of the user to be deleted.
  * @param {Object} res - Express response object.
- * @returns {Promise<void>} A promise that is resolved once the user is deleted.
+ * @returns {Promise&lt;void>} A promise that is resolved once the user is deleted.
  * @throws {Error} Will throw an error if there is an issue deleting the user from database.
  */
 app.delete("/users/:Username/update-info", passport.authenticate("jwt", { session: false }), async (req, res) => {
@@ -379,3 +407,26 @@ const port = process.env.PORT || 8080;
 app.listen(port, "0.0.0.0", () => {
     console.log("Listening on Port " + port);
 });
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#addFavorite">addFavorite</a></li><li><a href="global.html#deleteUser">deleteUser</a></li><li><a href="global.html#getAllMovies">getAllMovies</a></li><li><a href="global.html#getAllUsers">getAllUsers</a></li><li><a href="global.html#getDirector">getDirector</a></li><li><a href="global.html#getGenre">getGenre</a></li><li><a href="global.html#getMovie">getMovie</a></li><li><a href="global.html#getUser">getUser</a></li><li><a href="global.html#registerUser">registerUser</a></li><li><a href="global.html#removeFavorite">removeFavorite</a></li><li><a href="global.html#updateUser">updateUser</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Fri Apr 12 2024 14:29:03 GMT-0400 (Eastern Daylight Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
