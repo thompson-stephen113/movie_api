@@ -15,12 +15,18 @@ const bodyParser = require("body-parser");
 const Movies = Models.Movie;
 const Users = Models.User;
 
-// Local connection
+// // Local connection
 // mongoose.connect("mongodb://127.0.0.1:27017/myFlix_db", { useNewUrlParser: true, useUnifiedTopology: true});
 
 // Online connection
-mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true});
-
+mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true})
+    .then(() => {
+        console.log("Connected to MongoDB");
+    })
+    .catch((error) => {
+        console.error("Error connecting to MongoDB: ", error);
+    }
+);
 
 //-------------------------Use functions----------------------------//
 // Invoke Morgan
@@ -39,7 +45,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //------------------------CORS Integration--------------------------//
 const cors = require("cors");
 
-let allowedOrigins = ["http://localhost:8080", "http://localhost:1234", "http://localhost:4200/welcome", "https://myflix-db-app-24338506cd5a.herokuapp.com/","https://myflix-cf.netlify.app"];
+let allowedOrigins = ["http://localhost:8080", "http://localhost:1234", "http://localhost:4200", "https://myflix-db-app-24338506cd5a.herokuapp.com/","https://myflix-cf.netlify.app"];
 
 app.use(cors({
     origin: (origin, callback) => {
