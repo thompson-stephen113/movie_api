@@ -45,25 +45,29 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //------------------------CORS Integration--------------------------//
 const cors = require("cors");
 
-let allowedOrigins = [
-    "http://localhost:8080", 
-    "http://localhost:1234", 
-    "http://localhost:4200", 
-    "https://myflix-db-app-24338506cd5a.herokuapp.com",
-    "https://myflix-cf.netlify.app",
-    "https://thompson-stephen113.github.io/myFlix-Angular-app",
-];
-
 app.use(cors({
-    origin: (origin, callback) => {
-        if(!origin) return callback(null, true);
-        if(allowedOrigins.indexOf(origin) === -1){
-            let message = "The CORS policy for this application doesn't allow access from origin " + origin;
-            return callback(new Error(message ), false);
-        }
-        return callback(null, true);
-    }
+    origin: "*"
 }));
+
+// let allowedOrigins = [
+//     "http://localhost:8080", 
+//     "http://localhost:1234", 
+//     "http://localhost:4200", 
+//     "https://myflix-db-app-24338506cd5a.herokuapp.com",
+//     "https://myflix-cf.netlify.app",
+//     "https://thompson-stephen113.github.io/myFlix-Angular-app",
+// ];
+
+// app.use(cors({
+//     origin: (origin, callback) => {
+//         if(!origin) return callback(null, true);
+//         if(allowedOrigins.indexOf(origin) === -1){
+//             let message = "The CORS policy for this application doesn't allow access from origin " + origin;
+//             return callback(new Error(message ), false);
+//         }
+//         return callback(null, true);
+//     }
+// }));
 
 
 //--------------------------File Imports----------------------------//
