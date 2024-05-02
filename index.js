@@ -45,7 +45,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //------------------------CORS Integration--------------------------//
 const cors = require("cors");
 
-let allowedOrigins = ["http://localhost:8080", "http://localhost:1234", "http://localhost:4200", "https://myflix-db-app-24338506cd5a.herokuapp.com/","https://myflix-cf.netlify.app"];
+let allowedOrigins = [
+    "http://localhost:8080", 
+    "http://localhost:1234", 
+    "http://localhost:4200", 
+    "https://myflix-db-app-24338506cd5a.herokuapp.com/",
+    "https://myflix-cf.netlify.app",
+    "https://thompson-stephen113.github.io/myFlix-Angular-client/"
+];
 
 app.use(cors({
     origin: (origin, callback) => {
